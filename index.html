@@ -1,73 +1,96 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lotl, quit vaping with a pet</title>
-<meta name="description" content="Lotl is a quit-vaping app with an axolotl that heals when you skip a puff. Log puffs, ride out cravings, watch the pond clear.">
-<meta property="og:title" content="Lotl, quit vaping with a pet">
-<meta property="og:description" content="An axolotl that heals when you skip a puff.">
-<meta property="og:image" content="https://getlotl.app/img/hero-cheer.webp">
-<style>
-  :root { --bg:#FFF8FB; --ink:#2B2340; --soft:#5A5270; --pink:#E8628A; --pinkSoft:#F7A8C4; --teal:#5FD3E0; --card:#FFFFFF; --line:#F1E3EA; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#17121F; --ink:#F4EEF6; --soft:#B9B0C6; --card:#211A2C; --line:#352B44; } }
-  * { box-sizing: border-box; }
-  body { margin:0; background:var(--bg); color:var(--ink); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-  header { max-width: 1040px; margin: 0 auto; padding: 20px; display:flex; justify-content:space-between; align-items:center; }
-  .brand { font-weight: 800; font-size: 20px; letter-spacing:-0.01em; }
-  nav a { color: var(--soft); text-decoration:none; margin-left: 18px; font-size: 15px; }
-  .hero { max-width: 1040px; margin: 0 auto; padding: 24px 20px 48px; display:grid; grid-template-columns: 1.1fr 0.9fr; gap: 32px; align-items:center; }
-  h1 { font-size: clamp(34px, 5vw, 56px); line-height: 1.05; margin: 0 0 14px; letter-spacing:-0.02em; }
-  h1 em { font-style: normal; color: var(--pink); }
-  .lede { font-size: 19px; color: var(--soft); max-width: 46ch; }
-  .cta { display:inline-flex; gap:10px; align-items:center; margin-top: 22px; padding: 14px 22px; background: var(--ink); color:#fff; border-radius: 999px; text-decoration:none; font-weight:600; }
-  .cta.soon { background: var(--line); color: var(--soft); }
-  .waitlist { margin-top: 22px; display:flex; flex-wrap:wrap; gap:10px; max-width: 460px; }
-  .waitlist input { flex: 1 1 220px; padding: 13px 16px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--ink); font: inherit; }
-  .waitlist button { padding: 13px 22px; border-radius: 999px; border: 0; background: var(--pink); color:#fff; font: inherit; font-weight: 600; cursor: pointer; }
-  .waitlist-note { margin: 8px 0 0; font-size: 14px; color: var(--soft); }
-  .art { position:relative; }
-  .art img { width:100%; border-radius: 28px; display:block; box-shadow: 0 30px 60px rgba(43,35,64,0.18); }
-  .how { max-width: 1040px; margin: 0 auto; padding: 12px 20px 64px; display:grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-  .step { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 20px; }
-  .step b { display:block; font-size: 18px; margin-bottom: 6px; }
-  .step span { color: var(--soft); font-size: 15px; }
-  footer { max-width: 1040px; margin: 0 auto; padding: 24px 20px 60px; color: var(--soft); font-size: 14px; display:flex; gap: 18px; flex-wrap:wrap; }
-  footer a { color: var(--soft); }
-  @media (max-width: 720px) { .hero { grid-template-columns: 1fr; } .how { grid-template-columns: 1fr; } .art { order: -1; } }
-</style>
+<title>Lotl : arrêter la vape avec un axolotl</title>
+<meta name="description" content="Lotl est une appli pour arrêter la vape, avec un axolotl. Note tes bouffées et sa mare s&#x27;éclaircit ou se trouble. Surmonte tes envies avec lui. Sur l&#x27;App Store en décembre.">
+<link rel="alternate" hreflang="en" href="https://getlotl.app/">
+<link rel="alternate" hreflang="fr" href="https://getlotl.app/fr/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://getlotl.app/fr/">
+<meta property="og:title" content="Lotl : arrêter la vape avec un axolotl">
+<meta property="og:description" content="Lotl est une appli pour arrêter la vape, avec un axolotl. Note tes bouffées et sa mare s&#x27;éclaircit ou se trouble. Surmonte tes envies avec lui. Sur l&#x27;App Store en décembre.">
+<meta property="og:image" content="https://getlotl.app/img/share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#E3F4F2">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/fonts/gluten-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/site.css">
+<script>document.documentElement.className='js'</script>
 </head>
 <body>
-<header>
-  <div class="brand">🐚 Lotl</div>
-  <nav><a href="/support">Support</a><a href="/privacy">Privacy</a><a href="/fr/support">Français</a></nav>
-</header>
-
-<section class="hero">
-  <div>
-    <h1>An axolotl that heals when <em>you</em> skip a puff.</h1>
-    <p class="lede">Lotl turns quitting vaping into looking after a pet. Log puffs, ride out cravings with a five-minute breathing timer, and watch the pond go from murky to crystal.</p>
-    <!-- Waitlist: Kit form "Lotl waitlist" (id 10209842), created 18 Nov 2026. Action and field name match the HTML embed Kit generates for it. -->
-    <form class="waitlist" action="https://app.kit.com/forms/10209842/subscriptions" method="post" data-sv-form="10209842">
-      <input type="email" name="email_address" required placeholder="Your email · Ton email" aria-label="Email" autocomplete="email">
-      <button type="submit">Join the waitlist</button>
-    </form>
-    <p class="waitlist-note">Coming to the App Store in December. Waitlist gets TestFlight first. · Sur l'App Store en décembre, la liste d'attente reçoit TestFlight en premier.</p>
+<header class="top wrap"><a class="brand" href="/fr/" aria-label="Accueil Lotl"><img src="/img/icon-96.png" alt="" width="40" height="40"><span>Lotl</span></a><nav><a href="/fr/support">Assistance</a><a href="/fr/privacy" class="opt">Confidentialité</a><a href="/" lang="en" hreflang="en">English</a></nav></header>
+<main>
+<section class="hero wrap">
+  <div class="copy">
+    <h1>Une bouffée en moins, la mare s&#x27;éclaircit.</h1>
+    <div class="after">
+      <p class="lede">Lotl est une appli pour arrêter la vape, avec un axolotl. Chaque bouffée notée se voit dans sa mare : sous ta limite l&#x27;eau scintille, bien au-dessus elle tourne au marécage.</p>
+      <form class="signup" action="https://app.kit.com/forms/10209842/subscriptions" method="post" data-sv-form="10209842"><label class="sr" for="email1">Ton e-mail</label><input id="email1" type="email" name="email_address" required placeholder="toi@exemple.com" autocomplete="email"><button type="submit">Rejoindre la liste d&#x27;attente</button></form>
+      <p class="note">Lotl arrive sur l&#x27;App Store en décembre. La liste d&#x27;attente reçoit la bêta TestFlight en premier. On t&#x27;écrit à l&#x27;ouverture de la bêta et au lancement.</p>
+    </div>
   </div>
-  <div class="art"><img src="img/hero-cheer.webp" alt="Lotl, a pink axolotl, cheering on the shore of a clear pond" width="1000" height="1250"></div>
+  <div class="demo">
+    <div class="pond sticker" id="pond"><img src="/img/pond/crystal.webp" srcset="/img/pond/crystal-720.webp 720w, /img/pond/crystal.webp 1080w" sizes="(max-width: 900px) 92vw, 600px" width="1080" height="870" alt="La mare de l&#x27;appli Lotl au stade Cristalline" class="on"><img src="/img/pond/clear.webp" srcset="/img/pond/clear-720.webp 720w, /img/pond/clear.webp 1080w" sizes="(max-width: 900px) 92vw, 600px" width="1080" height="870" alt="La mare de l&#x27;appli Lotl au stade Claire" loading="eager"><img src="/img/pond/cloudy.webp" srcset="/img/pond/cloudy-720.webp 720w, /img/pond/cloudy.webp 1080w" sizes="(max-width: 900px) 92vw, 600px" width="1080" height="870" alt="La mare de l&#x27;appli Lotl au stade Trouble" loading="eager"><img src="/img/pond/algae.webp" srcset="/img/pond/algae-720.webp 720w, /img/pond/algae.webp 1080w" sizes="(max-width: 900px) 92vw, 600px" width="1080" height="870" alt="La mare de l&#x27;appli Lotl au stade Algues" loading="eager"><img src="/img/pond/swamp.webp" srcset="/img/pond/swamp-720.webp 720w, /img/pond/swamp.webp 1080w" sizes="(max-width: 900px) 92vw, 600px" width="1080" height="870" alt="La mare de l&#x27;appli Lotl au stade Marécage" loading="eager"><img src="/img/pond/dead.webp" srcset="/img/pond/dead-720.webp 720w, /img/pond/dead.webp 1080w" sizes="(max-width: 900px) 92vw, 600px" width="1080" height="870" alt="La mare de l&#x27;appli Lotl au stade Mare morte" loading="eager"></div>
+    <div class="dial">
+      <label for="stage">Fais glisser pour changer la mare</label>
+      <input id="stage" type="range" min="0" max="5" step="1" value="0" aria-valuetext="Cristalline">
+      <ul class="stages"><li><button type="button" data-i="0" aria-pressed="true">Cristalline</button></li><li><button type="button" data-i="1" aria-pressed="false">Claire</button></li><li><button type="button" data-i="2" aria-pressed="false">Trouble</button></li><li><button type="button" data-i="3" aria-pressed="false">Algues</button></li><li><button type="button" data-i="4" aria-pressed="false">Marécage</button></li><li><button type="button" data-i="5" aria-pressed="false">Mare morte</button></li></ul>
+      <p class="caption" id="caption" aria-live="polite"><b>Cristalline.</b> Sous ta limite depuis plusieurs jours. L&#x27;eau scintille.</p>
+    </div>
+  </div>
 </section>
 
-<section class="how">
-  <div class="step"><b>1. Set a plan, not a cliff</b><span>Tell Lotl what you vape. Your daily limit tapers gently to your quit date, and re-plans when you slip.</span></div>
-  <div class="step"><b>2. Every puff shows</b><span>Log a puff and the water clouds. Skip one and it clears. Several good days and your lotl thrives.</span></div>
-  <div class="step"><b>3. Cravings pass</b><span>Tap “Ride it out” and breathe with your lotl for five minutes, the time most cravings take to pass. Earn shells when it does.</span></div>
+<section class="day wrap">
+  <h2>Une journée avec Lotl</h2>
+  <ul><li><h3>Noter chaque bouffée</h3><p>Un geste par bouffée, ou +3 pour une session plus longue. Une erreur ? Tu annules en un geste.</p></li><li><h3>Suivre un plan progressif</h3><p>Ta limite du jour baisse doucement jusqu&#x27;à ta date d&#x27;arrêt. Un écart est noté, pas puni, et ton historique reste.</p></li><li><h3>Surmonter une envie</h3><p>Cinq minutes de respiration avec ton axolotl quand l&#x27;envie arrive. Une envie dure en général 5 à 10 minutes.</p></li></ul>
+  <p class="source">Durée d'une envie : ministère américain de la Santé, <a href="https://everytrycounts.betobaccofree.hhs.gov">Every Try Counts</a> (en anglais).</p>
 </section>
 
-<footer>
-  <span>© 2026 Lotl</span>
-  <a href="/privacy">Privacy policy</a>
-  <a href="/support">Support</a>
-  <a href="mailto:support@getlotl.app">support@getlotl.app</a>
-</footer>
+<section class="safe wrap">
+  <div class="sticker"><img src="/img/breathe.webp" width="720" height="900" alt="Un axolotl rose qui respire calmement sur un nénuphar au coucher du soleil" loading="lazy"></div>
+  <div><h2>Personne ne meurt dans cette mare.</h2><p>Quelques mauvais jours et la mare tourne au marécage, puis à la mare morte. Ton axolotl ne meurt jamais. Surmonte une envie à ce moment-là et il se remet à respirer.</p><p>Disparais une semaine et il se cache sous le nénuphar jusqu&#x27;à ton retour. Rien de ce que tu as gagné n&#x27;est perdu.</p></div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div>
+      <h2>La bêta avant tout le monde.</h2>
+      <form class="signup" action="https://app.kit.com/forms/10209842/subscriptions" method="post" data-sv-form="10209842"><label class="sr" for="email2">Ton e-mail</label><input id="email2" type="email" name="email_address" required placeholder="toi@exemple.com" autocomplete="email"><button type="submit">Rejoindre la liste d&#x27;attente</button></form>
+      <p class="note">Lotl arrive sur l&#x27;App Store en décembre. La liste d&#x27;attente reçoit la bêta TestFlight en premier. On t&#x27;écrit à l&#x27;ouverture de la bêta et au lancement.</p>
+    </div>
+    <div class="sticker"><img src="/img/hero-cheer.webp" width="640" height="800" alt="Un axolotl rose qui lève les bras de joie au bord d&#x27;une mare claire" loading="lazy"></div>
+  </div>
+</section>
+</main>
+<footer class="foot wrap"><span>© 2026 Lotl</span><a href="/fr/privacy">Politique de confidentialité</a><a href="/fr/support">Assistance</a><a href="mailto:support@getlotl.app">support@getlotl.app</a><a href="/">English</a></footer>
+<script>
+(() => {
+  const D = {"names": ["Cristalline", "Claire", "Trouble", "Algues", "Marécage", "Mare morte"], "captions": ["Sous ta limite depuis plusieurs jours. L'eau scintille.", "Tu suis ton plan. C'est là que se passent la plupart des jours.", "Un peu au-dessus, jour après jour. L'eau commence à se troubler.", "Bien au-dessus de la limite. Les algues arrivent et ton axolotl fatigue.", "Le double de la limite pendant trois jours. Malade, pas fâché.", "Le triple de la limite. Il ne meurt pas pour autant : surmonte une envie et il se remet à respirer."], "page": ["#E3F4F2", "#E2F1EC", "#E2ECE3", "#DFE5D3", "#DBDDC8", "#D6D6C7"]};
+  const range = document.getElementById('stage'), cap = document.getElementById('caption');
+  const imgs = [...document.querySelectorAll('#pond img')], btns = [...document.querySelectorAll('.stages button')];
+  let timer = null;
+  const show = (i) => {
+    imgs.forEach((im, k) => im.classList.toggle('on', k === i));
+    btns.forEach((b, k) => b.setAttribute('aria-pressed', k === i ? 'true' : 'false'));
+    range.value = i; range.setAttribute('aria-valuetext', D.names[i]);
+    const b = document.createElement('b'); b.textContent = D.names[i] + '.';
+    cap.replaceChildren(b, ' ' + D.captions[i]);
+    document.documentElement.style.setProperty('--page', D.page[i]);
+  };
+  const stop = () => { if (timer) { clearInterval(timer); timer = null; } };
+  range.addEventListener('input', () => { stop(); show(+range.value); });
+  btns.forEach((b) => b.addEventListener('click', () => { stop(); show(+b.dataset.i); }));
+  // One orchestrated moment: the pond starts as a swamp and clears once, unless motion is reduced.
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    show(4);
+    let i = 4;
+    const start = () => { setTimeout(() => { timer = setInterval(() => { i -= 1; show(i); if (i === 0) stop(); }, 650); }, 900); };
+    Promise.all(imgs.map((im) => im.complete ? 0 : new Promise((r) => { im.onload = im.onerror = r; }))).then(start);
+  }
+})();
+</script>
 </body>
 </html>
