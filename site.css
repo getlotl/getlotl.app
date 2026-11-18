@@ -1,7 +1,7 @@
 /* Lotl site. Fonts are self-hosted (SIL Open Font License): Gluten for display, Figtree for text. */
-@font-face { font-family: "Gluten"; font-weight: 700; font-display: swap; src: url(/fonts/gluten-latin-700-normal.woff2) format("woff2"); }
-@font-face { font-family: "Figtree"; font-weight: 400; font-display: swap; src: url(/fonts/figtree-latin-400-normal.woff2) format("woff2"); }
-@font-face { font-family: "Figtree"; font-weight: 700; font-display: swap; src: url(/fonts/figtree-latin-700-normal.woff2) format("woff2"); }
+@font-face { font-family: "Gluten"; font-weight: 700; font-display: swap; src: url(/gluten-latin-700-normal.woff2) format("woff2"); }
+@font-face { font-family: "Figtree"; font-weight: 400; font-display: swap; src: url(/figtree-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: "Figtree"; font-weight: 700; font-display: swap; src: url(/figtree-latin-700-normal.woff2) format("woff2"); }
 
 :root {
   color-scheme: light;
